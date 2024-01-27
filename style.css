@@ -76,7 +76,6 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url("E:\Portfolio website\self.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -211,4 +210,24 @@ section{
 
 .home-sci a:hover::before{
     width: 100%;
+}
+
+
+.img-box{
+    width: 560px;
+    height: 560px;
+    position: relative;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box img{
+    border: 5px solid white;
+    border-radius: 50%;
+    box-shadow: 10px 10px 50px white;
+    background-color: var(--aqua-color);
+    width: 399px;
+    height: 400px
 }
