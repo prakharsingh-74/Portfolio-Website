@@ -53,6 +53,7 @@ body{
     font-weight: 500;
     margin-left: 3.5rem;
     transition: .3s;
+    animation: slideTop .5s ease forwards;
 }
 
 .navbar a:hover,
@@ -88,6 +89,8 @@ section{
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
+    animation: slideBottom is ease forwards;
+    animation-delay: .7s;
 }
 
 .home-content .text-animate{
@@ -213,7 +216,7 @@ section{
 }
 
 
-.img-box{
+.gif-box{
     width: 560px;
     height: 560px;
     position: relative;
@@ -223,11 +226,61 @@ section{
     align-items: center;
 }
 
-.img-box img{
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.about{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ gap: 2rem;
+ background: var(--second-bgcolor);
+ padding-bottom: 6rem 0;
+ text-align: center;
+}
+
+.heading{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center
+}
+
+.about-img {
+    width: 250px; /* Adjusted width */
+    height: 250px; /* Adjusted height */
     border: 5px solid white;
     border-radius: 50%;
     box-shadow: 10px 10px 50px white;
     background-color: var(--aqua-color);
-    width: 399px;
-    height: 400px
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-img img {
+    display: block; /* Added to override default inline behavior */
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%; /* Ensure the image stays circular */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
