@@ -284,3 +284,21 @@ section{
     border-radius: 50%; /* Ensure the image stays circular */
     object-fit: cover; /* Maintain aspect ratio */
   }
+
+  .about-content{
+    text-align: center;
+  }
+
+  .about-content h3{
+    font-size: 2.6rem;
+  }
+
+  .about-content p{
+    font-size: 1.9rem;
+    margin: 2rem 0 3rem;
+  }
+
+  .btn-box.btns{
+    display: inline;
+    width: 15rem;
+  }
