@@ -310,10 +310,40 @@ section{
   .secondsection{
     max-width: 80vw;
     margin: auto;
-    padding: 6rem 0; /* Adjust as needed */
+    padding: 6rem 0;
+    height: 80vh;
   }
 
   .secondsection h1{
     font-size: 2.3rem;
   }
 
+.secondsection .box{
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondsection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 140px;
+}
+
+.vertical-title{
+    position: relative;
+    top: 99px;
+    width: 150px;
+    font-size: medium;
+}
+
+.vertical-desc{
+    position: relative;
+    top: 100px;
+    color: gray;
+    width: 200px;
+    font-size: small;
+}
