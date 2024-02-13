@@ -269,6 +269,7 @@ section{
 
 .home-sci a:hover{
     color: var(--bg-color);
+    border-color: var(--bg-color);
 }
 
 .home-sci a::before{
@@ -276,7 +277,7 @@ section{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
     background: var(--main-color);
     z-index: -1;
@@ -665,4 +666,57 @@ section{
 .portfolio-layer a i {
     font-size: 2rem;
     color: var(--snd-bg-color);
+}
+
+.certificates {
+    background: var(--second-bgcolor);
+}
+
+.certificates .certificate-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 100px 25px;
+    column-gap: 25px;
+    row-gap: 45px;
+    margin-top: 50px;
+}
+
+.certificates .box {
+    background-color: var(--main2);
+    border: 2.7px solid var(--ternary);
+    border-radius: 14px;
+    text-align: center;
+    padding: 14px 10px;
+}
+
+.certificates .box img {
+    height: 190px;
+    width: 190px;
+    margin-bottom: 8px;
+    -webkit-user-drag: none;
+}
+
+.certificates .box img:hover {
+    transform: scale(2.3);
+    transition: all 0.5s ease;
+    border: 3.2px solid var(--hover);
+    border-radius: 10px;
+}
+
+.certificates .box .topic {
+    width: 180px;
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto 5px auto;
+}
+
+.certificates .box .topic1 {
+    width: 180px;
+    color: var(--secondary);
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 auto 5px auto;
 }
