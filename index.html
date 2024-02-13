@@ -264,7 +264,7 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span style="color: var(--main-color)">Me!</span></h2>
 
-        <form action="#">
+        <form name= "submit-to-google-sheet">
             <div class="input-box">
                 <div class="input-field">
                     <input type="text" placeholder="Full Name" required>
@@ -310,6 +310,18 @@
         <a href="#"><i class='bx bx-up-arrow-alt' ></i></a>
   </footer>
 
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwikLeA63MOejr7Nany7evhfHdp1bTogfYfyv-8Tp3A5VonYhd9-FcpVtGYdMX2NsvYAA/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
       <script src="script.js"></script>
 </body>
