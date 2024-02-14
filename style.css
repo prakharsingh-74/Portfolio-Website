@@ -50,19 +50,19 @@ body{
 .ring:nth-child(1) {
     border-bottom-width: 10px;
     border-color: var(--primary);
-    animation: rotate1 2s linear infinite;
+    animation: rotate1 7s linear infinite;
 }
 
 .ring:nth-child(2) {
     border-right-width: 10px;
     border-color: var(--hover);
-    animation: rotate2 2s linear infinite;
+    animation: rotate2 7s linear infinite;
 }
 
 .ring:nth-child(3) {
     border-top-width: 10px;
     border-color: var(--ternary);
-    animation: rotate3 2s linear infinite;
+    animation: rotate3 7s linear infinite;
 }
 
 .loading {
