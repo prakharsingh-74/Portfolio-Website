@@ -271,26 +271,21 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span style="color: var(--main-color)">Me!</span></h2>
 
-        <form name= "submit-to-google-sheet">
+        <form onsubmit="sendEmail()"; reset(); return false;>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" id="name" placeholder="Full Name" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
+                    <input type="text" id="email" placeholder="Email Address" required>
                     <span class="focus"></span>
                 </div>
             </div>
         
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile number" required>
-                    <span class="focus"></span>
-                </div>
-
-                <div class="input-field">
-                    <input type="text" placeholder="Email subject" required>
+                    <input type="number" id="phone" placeholder="Mobile number" required>
                     <span class="focus"></span>
                 </div>
             </div>
@@ -331,5 +326,6 @@
   </script>
       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
       <script src="script.js"></script>
+    
 </body>
 </html>
